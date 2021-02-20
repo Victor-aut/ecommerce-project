@@ -1,1 +1,1 @@
-# ecomerce-project
+# ecommerce-project

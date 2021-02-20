@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-project",
+  "version": "1.0.0",
+  "description": "ecommerce demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "watch": "wdio wdio.conf.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-aut/ecommerce-project.git"
+  },
+  "author": "Victor Cisneros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-aut/ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/Victor-aut/ecommerce-project#readme",
+  "dependencies": {
+    "@wdio/cli": "^7.0.7"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.0.7",
+    "@wdio/mocha-framework": "^7.0.7",
+    "@wdio/spec-reporter": "^7.0.7",
+    "@wdio/sync": "^7.0.7",
+    "chromedriver": "^88.0.0",
+    "wdio-chromedriver-service": "^7.0.0"
+  }
+}

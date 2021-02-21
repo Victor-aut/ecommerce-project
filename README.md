@@ -1,6 +1,6 @@
 # ecommerce-project
 
-Demo of automation test using Webdriver.IO framework and Page Object Pattern.
+Automated testing demo using Webdriver.IO framework and Page Object Pattern.
 
 Test web page: http://automationpractice.com/index.php 
 

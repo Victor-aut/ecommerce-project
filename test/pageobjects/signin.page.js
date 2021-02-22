@@ -39,54 +39,45 @@ class SigninPage extends Page {
 
   selectTitle() {
     this.gender1.click()
-    return this;
   }
 
   enterFullName(firstName, lastName) {
     this.customerfirstName.setValue(firstName)
     this.customerlastName.setValue(lastName)
-    return this;
   }
 
   enterPassword(password) {
     this.password.setValue(password)
-    return this;
   }
 
   enterBirthDate(day, month, year) {
     this.day.selectByAttribute('value', day)
     this.month.selectByAttribute('value', month)
     this.year.selectByAttribute('value', year)
-    return this;
   }
 
   enterAdress(firstName, lastName, address) {
     this.firstName.setValue(firstName)
     this.lastName.setValue(lastName)
     this.address.setValue(address)
-    return this;
   }
 
   enterLocation(city, state, zipCode) {
     this.city.setValue(city)
     this.state.selectByAttribute('value', state)
     this.zipCode.setValue(zipCode)
-    return this;
   }
 
   enterMobilePhone(mobile) {
     this.mobilePhone.setValue(mobile)
-    return this;
   }
 
   setAlias(alias) {
     this.alias.setValue(alias)
-    return this;
   }
 
   clickRegisterButton() {
     this.registerBtn.click()
-    return this;
   }
 
   open() {

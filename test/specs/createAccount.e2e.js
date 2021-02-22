@@ -2,6 +2,7 @@ const SigninPage = require('../pageobjects/signin.page');
 
 describe('Create an account', () => {
   before(() => {
+    browser.maximizeWindow();
     require('expect-webdriverio');
   });
 
@@ -14,15 +15,15 @@ describe('Create an account', () => {
     SigninPage.enterEmail(email);
     expect($('.page-subheading')).toHaveTextContaining('YOUR PERSONAL INFORMATION');
 
-    SigninPage.selectTitle()
-      .enterFullName('Victor', 'Ragnar')
-      .enterPassword('mySecretPassword')
-      .enterBirthDate(22, 4, 2000)
-      .enterAdress('Victor', 'Ragnar', 'Fake address 35')
-      .enterLocation('Austin', 43, '58974')
-      .enterMobilePhone('(55) 456-582-2154')
-      .setAlias('Texas Address')
-      .clickRegisterButton();
+    SigninPage.selectTitle();
+    SigninPage.enterFullName('Victor', 'Ragnar');
+    SigninPage.enterPassword('mySecretPassword');
+    SigninPage.enterBirthDate(22, 4, 2000);
+    SigninPage.enterAdress('Victor', 'Ragnar', 'Fake address 35');
+    SigninPage.enterLocation('Austin', 43, '58974');
+    SigninPage.enterMobilePhone('(55) 456-582-2154');
+    SigninPage.setAlias('Texas Address');
+    SigninPage.clickRegisterButton();
 
     expect($('.info-account')).toHaveTextContaining('Welcome to your account.');
   });

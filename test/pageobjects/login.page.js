@@ -4,9 +4,10 @@ const Page = require('./page');
 class LoginPage extends Page {
 
 //define selectors using getter method
-  get inputUsername () {return $('#username');}
-  get inputPassword () {return $('#password');}
-  get btnSubmit () {return $('button[type="submit"]');}
+  get inputUsername () {return $('#email');}
+  get inputPassword () {return $('#passwd');}
+  get btnSubmit () {return $('#SubmitLogin');}
+  get btnHome () {return $('[title="Home"]')}
 
 /** a method to encapsule automation code to interact with the page
     e.g. to login using username and password**/
@@ -16,9 +17,13 @@ class LoginPage extends Page {
     this.btnSubmit.click();
   }
 
+  goToHomePage() {
+    this.btnHome.click()
+  }
+
 //overwrite specifc options to adapt it to page object
   open() {
-    return super.open('login');
+    return super.open('index.php?controller=authentication&back=my-account');
   }
 }
 
